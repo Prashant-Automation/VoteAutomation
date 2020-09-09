@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+   		 <class name="com.indiggo.ilp.test.scenarios.functional_test.TS002UserAuthentication"/>
+   		 <class name="com.indiggo.ilp.test.scenarios.functional_test.TS003ForgotPassword"/>
+   		 <class name="com.indiggo.ilp.test.scenarios.functional_test.TS004FirstTimeOnBoarding"/> 
+   		 <class name="com.indiggo.ilp.test.scenarios.functional_test.TS005FirstTimePriorityWithKnownPriority"/>
+   		 <!--class name="com.indiggo.ilp.test.scenarios.functional_test.TS007LeadershipAssessment"/-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

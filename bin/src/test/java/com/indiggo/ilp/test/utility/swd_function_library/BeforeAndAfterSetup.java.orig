@@ -1,0 +1,76 @@
+/************************************************************
+ * BrowserSession class keep BeforeMethod and AfterMethod 
+ * annotation section and this class will inherited to all 
+ * scripts where it's needed.
+ * 
+ * @author mrahman
+ *************************************************************/
+
+
+package com.indiggo.ilp.test.utility.swd_function_library;
+
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
+import java.util.Properties;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class BeforeAndAfterSetup {
+	
+<<<<<<< HEAD
+    String browser = "IE";
+=======
+	String browser = "FF";
+>>>>>>> 75eb5ba73244ed49b0b9d45c8df36993bc29ac29
+	String appUrl = "applicationUrl";
+	
+  @BeforeMethod
+  public void beforeMethod() throws MalformedURLException, FileNotFoundException {
+	  //Load config.properties file to read parameter.
+	  Properties prop = new Properties();
+	  //Load browser type from config properties file.
+	  String loadBrowserType = SwdFunctions.loadCfgPropFile(browser, prop);
+	  //Load application url from config properties file.
+	  String loadAppUrl = null;
+	  
+
+	  //Opening browser.
+	  
+	  if ((System.getenv("BROWSER") != null)  && (System.getenv("TEST_URL")!=null))
+	  {
+		  browser = System.getenv("BROWSER");
+		  System.out.println ("Selected browser using Testnow is "+ browser);
+		  loadAppUrl = System.getenv("TEST_URL");
+		  System.out.println ("ILP URL using Testnow is "+ loadAppUrl);
+		  SwdFunctions.openBrowserTestnow(browser);
+		 // SwdFunctions.driver.navigate.to(loadAppUrl);
+		  SwdFunctions.driver.get(loadAppUrl);
+	  }
+	 else
+		//System.out.println ("Broswer is not set correctly"+ browser);
+	  {
+		 SwdFunctions.openBrowser(loadBrowserType);
+		 System.out.println ("Selected browser is"+ browser);
+		 loadAppUrl = SwdFunctions.loadCfgPropFile(appUrl, prop);
+		 System.out.println ("URL through Indiggo code is "+ appUrl);
+		 SwdFunctions.driver.navigate().to(loadAppUrl);
+	  }
+			  
+	  //Navigating to application URL.
+	//  SwdFunctions.driver.navigate().to(loadAppUrl);
+	  //Printing URL which is used to navigate.
+	  LogClass.log.info("Navigate to URL: "+loadAppUrl);
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+	  //Deleting all cookies before close browser.
+      SwdFunctions.driver.manage().deleteAllCookies();
+	 
+	  //Closing browser.
+	   SwdFunctions.driver.quit();
+	 //	  Swd_Functions.driver.close();
+  }
+
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Suite">
+  <test name="Test">
+    <classes>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS009HomePage"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS010HamburgerMenu"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS011ActualVsIdeal"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS012UpdatePriorities"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS013UpdatePriorityAllocation"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS014LinkEventsToPriority"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS017UpcomingMeeting"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS018UpcomingMeetingCreateAgenda"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS019UpComingMeetingViewAgenda"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS020CreateAgendaByImportParkedTopic"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS026Intend"/> 
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS028MeetingSummariesAndMeetingSummary"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS029PastMeetingAssessment"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS030TopicParkingLot"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS031NextAndCurrentMeeting"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS032LeaderProfile"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS043CreateNewCrew"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS044EditCrew"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS045ShareCrew"/> 
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS046AddLeadersToCrew"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS047RemoveLeadersFromCrew"/>
+       <!--class name="com.indiggo.ilp.test.scenarios.functional_test.TS048FocusForecastNavigationFromCrew"/-->
+         
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS049DeleteCrew"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS052Messages"/>
+      
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS015OrganizationalPriorities"/>
+      
+       <!--class name="com.indiggo.ilp.test.scenarios.functional_test.TS050FocusForecast"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS051InContact"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS054ROLIndex"/--> 
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS025TodaysMeetingInMeeting"/>
+       <class name="com.indiggo.ilp.test.scenarios.functional_test.TS027DecisionAndNextSteps"/>
+       <!--class name="com.indiggo.ilp.test.scenarios.functional_test.TS016CloseTheGapCreateMeeting"/-->
+       <!-- class name="com.indiggo.ilp.test.scenarios.functional_test.TS042InviteUserToIndividualPriority"/-->
+   		    		 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+            

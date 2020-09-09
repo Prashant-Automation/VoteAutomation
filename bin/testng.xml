@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+	<test name="Test">
+		<classes>
+			<!--class name="com.indiggo.ilp.test.scenarios.functional_test.TS037SmokeTest_PrioritySelectionWithKnownPriority"/ -->
+			<class name="com.indiggo.ilp.test.scenarios.functional_test.TS038PerformanceTest_HomePage"/>
+			<!--class name="com.indiggo.ilp.test.scenarios.functional_test.TS012UpdatePriorities"/-->
+			<!--class name="com.indiggo.ilp.test.scenarios.functional_test.TS050InContact"/ -->
+			<!--class name="com.indiggo.ilp.test.scenarios.functional_test.TS052SmokeTest_LeadershipAssessment"/ -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
