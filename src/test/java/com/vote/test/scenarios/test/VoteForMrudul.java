@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class VoteForMrudul {
 
 	public void testVote() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/usr/local/share/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
